@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsercaodeDados">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backgroundtwo" />
+
+    <ImageButton
+        android:id="@+id/botaoPlanejar"
+        android:layout_width="156dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultadomesesdeplanejamento"
+        app:srcCompat="@drawable/planejar"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/resultadonomedameta"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Digite o nome escolhido para sua meta"
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/receitamensal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomedameta"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/nomedameta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="-20dp"
+        android:text="Nome da meta"
+        app:layout_constraintBottom_toTopOf="@+id/resultadonomedameta"
+        app:layout_constraintStart_toStartOf="@+id/resultadonomedameta"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/resultadoreceitamensal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Digite o valor que você ganha por mês"
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/despesamensal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/receitamensal"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/resultadodespesamensal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Digite quanto você gasta por mês"
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/valordesejado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/despesamensal"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/despesamensal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="-20dp"
+        android:text="Despesa Mensal"
+        app:layout_constraintBottom_toTopOf="@+id/resultadodespesamensal"
+        app:layout_constraintStart_toStartOf="@+id/resultadodespesamensal"
+        app:layout_constraintTop_toBottomOf="@+id/resultadoreceitamensal" />
+
+    <TextView
+        android:id="@+id/valordesejado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="-20dp"
+        android:text="Valor Desejado"
+        app:layout_constraintBottom_toTopOf="@+id/resultadovalordesejado"
+        app:layout_constraintStart_toStartOf="@+id/resultadovalordesejado"
+        app:layout_constraintTop_toBottomOf="@+id/resultadodespesamensal" />
+
+    <EditText
+        android:id="@+id/resultadovalordesejado"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="Digite quantos reais você quer guardar"
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/mesesdeplanejamento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valordesejado"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/mesesdeplanejamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="-20dp"
+        android:text="Meses de Planejamento"
+        app:layout_constraintBottom_toTopOf="@+id/resultadomesesdeplanejamento"
+        app:layout_constraintStart_toStartOf="@+id/resultadomesesdeplanejamento"
+        app:layout_constraintTop_toBottomOf="@+id/resultadovalordesejado" />
+
+    <EditText
+        android:id="@+id/resultadomesesdeplanejamento"
+        android:layout_width="323dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="119dp"
+        android:ems="10"
+        android:hint="Daqui a quantos meses você pretende realizar seu sonho?"
+        android:inputType="text"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/botaoPlanejar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mesesdeplanejamento"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/receitamensal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="-20dp"
+        android:text="Receita Mensal"
+        app:layout_constraintBottom_toTopOf="@+id/resultadoreceitamensal"
+        app:layout_constraintStart_toStartOf="@+id/resultadoreceitamensal"
+        app:layout_constraintTop_toBottomOf="@+id/resultadonomedameta" />
+
+    <ImageButton
+        android:id="@+id/voltar"
+        android:layout_width="55dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
